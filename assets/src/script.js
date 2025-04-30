@@ -279,7 +279,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const mapIframe = document.createElement("iframe");
     mapIframe.setAttribute(
       "src",
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.520086826164!2d109.25346390000001!3d-7.407542899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655ee8ca35359f%3A0x30daaf02efe8428f!2sFaculty%20of%20Mathematics%20and%20Natural%20Science%20Unsoed!5e0!3m2!1sen!2sid!4v1745484055605!5m2!1sen!2sid"
+      "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3956.540413206289!2d109.25949707500116!3d-7.405278492604819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMjQnMTkuMCJTIDEwOcKwMTUnNDMuNSJF!5e0!3m2!1sid!2sid!4v1745635696615!5m2!1sid!2sid"
     );
     mapIframe.setAttribute("allowfullscreen", "");
     mapIframe.setAttribute("loading", "lazy");
@@ -303,7 +303,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "whatsapp",
       "fab fa-whatsapp",
       "Chat WhatsApp",
-      "https://wa.me/6287838013523"
+      "https://wa.me/6282324644707"
     );
 
     // Phone button
@@ -363,7 +363,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const whatsappBtn = document.createElement("a");
     whatsappBtn.className = "whatsapp-btn";
-    whatsappBtn.href = "https://wa.me/6287838013523";
+    whatsappBtn.href = "https://wa.me/6282324644707";
     whatsappBtn.target = "_blank";
     whatsappBtn.innerHTML = '<i class="fab fa-whatsapp"></i> Chat dengan Kami';
 
