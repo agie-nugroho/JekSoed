@@ -57,8 +57,14 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     e.preventDefault();
     const target = document.querySelector(this.getAttribute("href"));
     if (target) {
+      // Add offset for fixed headers or navigation bars (70px in this case)
+      const headerOffset = 70;
+      const elementPosition = target.getBoundingClientRect().top;
+      const offsetPosition =
+        elementPosition + window.pageYOffset - headerOffset;
+
       window.scrollTo({
-        top: target.offsetTop - 70,
+        top: offsetPosition,
         behavior: "smooth",
       });
     }
@@ -311,7 +317,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "phone",
       "fas fa-phone",
       "Telepon Kami",
-      "tel:+6281234567890"
+      "tel:+6282324644707"
     );
 
     // Back to top button
@@ -331,7 +337,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Append buttons to float-actions
     floatActions.appendChild(whatsappBtn);
-    floatActions.appendChild(phoneBtn);
+    // floatActions.appendChild(phoneBtn);
     floatActions.appendChild(topBtn);
 
     // Add float-actions to body
